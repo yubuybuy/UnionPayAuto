@@ -18,14 +18,14 @@ jobs:
     - name: Setup Theos
       uses: Randomblock1/theos-action@v1
 
-    - name: Build package
+    - name: Build dylib
       run: |
         make clean
-        make package
+        make
 
-    - name: Upload DEB artifact
+    - name: Upload dylib artifact
       uses: actions/upload-artifact@v4
       with:
-        name: UnionPayAuto-DEB
-        path: packages/*.deb
+        name: UnionPayAuto-dylib
+        path: .theos/obj/debug/*.dylib
         if-no-files-found: error
