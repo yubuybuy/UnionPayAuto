@@ -22,7 +22,6 @@
 // Configuration
 // ========================================
 
-static BOOL enableAutoClick = YES;
 static BOOL enableCaptchaLogging = YES;
 static NSString *serverURL = @"http://10.168.0.39:8888/bhv";
 
