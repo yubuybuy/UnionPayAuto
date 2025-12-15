@@ -1,0 +1,10 @@
+Package: com.unionpay.auto
+Name: UnionPayAuto
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: 云闪付自动化助手 - 自动领券、验证码处理、bhv参数捕获
+Maintainer: Your Name <your@email.com>
+Author: Your Name
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 11.0)
+

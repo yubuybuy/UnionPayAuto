@@ -1,0 +1,31 @@
+name: Build UnionPay Tweak
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Theos
+      uses: Randomblock1/theos-action@v1
+
+    - name: Build package
+      run: |
+        make clean
+        make package
+
+    - name: Upload DEB artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: UnionPayAuto-DEB
+        path: packages/*.deb
+        if-no-files-found: error

@@ -1,0 +1,46 @@
+# Theos 编译产物
+.theos/
+packages/
+.debmake/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# BHV 数据
+bhv_captured.json
+latest_bhv.txt
+*.log
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# IPA 提取文件
+ipa_extracted/
+*.ipa
+
+# Git
+*.orig
+
+# 临时文件
+*.tmp
+*.bak
+*.old
