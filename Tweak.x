@@ -3,6 +3,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
 
 static int requestCount = 0;
 
